@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "452972580172",
+    "project_id": "petsync-86790",
+    "storage_bucket": "petsync-86790.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452972580172:android:553dc97ce8cb05f7e853e9",
+        "android_client_info": {
+          "package_name": "com.example.petsync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjeA4BJ55MxOf4hEYNDdJJJTgnFcmb9pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452972580172:android:f61f5e56843772f4e853e9",
+        "android_client_info": {
+          "package_name": "com.yourname.petsync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjeA4BJ55MxOf4hEYNDdJJJTgnFcmb9pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
