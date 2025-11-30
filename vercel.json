@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "flutter build web --release",
+  "buildCommand": "bash .vercel/flutter_build.sh",
   "outputDirectory": "build/web",
   "framework": null,
   "routes": [
