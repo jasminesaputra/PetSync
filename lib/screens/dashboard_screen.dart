@@ -208,6 +208,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           ),
           const SizedBox(height: 12),
 
+          // PET LIST
           StreamBuilder<List<Pet>>(
             stream: fs.streamAllPets(),
             builder: (context, snap) {
@@ -215,10 +216,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 return const Center(child: CircularProgressIndicator());
               }
 
-              var pets = snap.data!.where((p) => _matches(p, _query)).toList();
+              var pets = snap.data!;
 
+              // SEARCH FILTER
+              pets = pets.where((p) => _matches(p, _query)).toList();
+
+              // FIXED CATEGORY FILTER (case-insensitive)
               if (_selected != "All") {
-                pets = pets.where((p) => p.species == _selected).toList();
+                final selectedLower = _selected.toLowerCase();
+                pets = pets
+                    .where(
+                      (p) => p.species.trim().toLowerCase() == selectedLower,
+                    )
+                    .toList();
               }
 
               return ListView.separated(
